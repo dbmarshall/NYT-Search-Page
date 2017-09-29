@@ -4,20 +4,20 @@ var endDate;
 var page;
 
 function nytimesSearch(){
-    var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=d85061fa785342b0a38b94de8b922673&q=" + query + "&begin_date=" + startDate + "&end_date=" + endDate + "&page=" + page;
-    // url += '?' + $.param({
-    //   'api-key': "d85061fa785342b0a38b94de8b922673",
-    //   'q': query,
-    //   'begin_date': startDate,
-    //   'end_date': endDate,
-    //   'page': page
-    // });
+    var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=d85061fa785342b0a38b94de8b922673&q=" + query + "&page=" + page;
+    if (startDate != '') {
+      url = url + "&begin_date=" + startDate;
+    }
+    if (endDate != '') {
+      url = url + "&end_date=" + endDate;
+    }
     $.ajax({
       url: url,
       method: 'GET',
     }).done(function(result) {
       console.log(result);
-      for (var i = 0; i < result.response.docs.length; i++){
+
+      for (var i = 0; i < parseInt(page); i++){
           var headline = result.response.docs[i].headline.main;
           console.log(headline);
           var articleDiv = $("<div>");
@@ -47,6 +47,7 @@ function nytimesSearch(){
 
   $("#search-btn").on("click", function(){
     event.preventDefault();
+    $("#results").empty();
       // console.log("searchclick") 
      query = $("#search-term").val();
      page = $("#num-results").val();
