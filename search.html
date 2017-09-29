@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center" id="page-header">
       <span class="glyphicon glyphicon-modal-window"></span>    New York Times Search
     </div>
     <div class="row">
@@ -20,11 +20,11 @@
             <form>
               <div class="form-group">
                 <label for="search-term">Search Term:</label>
-                <input type="text" class="form-control" id="search-term">
+                <input type="text" class="form-control myclass" id="search-term">
               </div>
               <div class="form-group">
                 <label for="num-results">Number of Records to Retrieve:</label>
-                <select class="form-control" id="num-results">
+                <select class="form-control myclass" id="num-results">
                   <option>1</option>
                   <option>5</option>
                   <option>10</option>
@@ -32,13 +32,13 @@
               </div>
               <div class="form-group">
                 <label for="start-yaer">Start Year (Optional):</label>
-                <input type="text" class="form-control" id="start-year">
+                <input type="text" class="form-control myclass" id="start-year">
               </div>
               <div class="form-group">
                 <label for="end-year">End Year (Optional):</label>
-                <input type="text" class="form-control" id="end-year">
+                <input type="text" class="form-control myclass" id="end-year">
               </div>
-              <button class="btn btn-default" type="submit" id="search"><span class="glyphicon glyphicon-search"></span> Search</button>
+              <button class="btn btn-default" type="submit" id="search-btn"><span class="glyphicon glyphicon-search"></span> Search</button>
               <button class="btn btn-default" type="submit" id="clear"><span class="glyphicon glyphicon-trash"></span> Clear Results</button>
             <form>
           </div>

@@ -1,0 +1,29 @@
+#page-header {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  background-color: #213259;
+}
+
+.jumbotron > span {
+  top: 9px;
+}
+
+.panel-primary > .panel-heading {
+  border-color: #041b50;
+  background-color: #041b50;
+}
+
+.panel-primary {
+  border-color: #041b50;
+}
+
+#search-btn, #clear {
+  background-color: darkgrey;
+  color: white;
+  border-color: #041b50;
+}
+
+.myclass:active {
+  border: 2px solid #041b50;
+}
