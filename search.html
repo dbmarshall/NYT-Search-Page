@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+  <meta charset="utf-8">
+  <title>Search NYT</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <span></span>New York Times Search
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-primary" id="search">
+          <div class="panel-heading"><span></span>Search Parameters</div>
+          <div class="panel-body">
+            <form>
+              <div class="form-group">
+                <label for="search-term">Search Term:</label>
+                <input type="text" class="form-control" id="search-term">
+              </div>
+              <div class="form-group">
+                <label for="num-results">Number of Records to Retrieve:</label>
+                <select class="form-control" id="num-results">
+                  <option>2</option>
+                  <option>4</option>
+                  <option>6</option>
+                  <option>8</option>
+                  <option>10</option>
+                </select>
+              </div>
+              <div class="form-group">
+                
+
+
+              </div>
+
+                  
+                
+
+              
+
+
+
+            <form>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="panel panel-primary" id="results">
+          <div class="panel-heading"><span></span>Top Results</div>
+          <div class="panel-body">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="search.js"></script>
+</body>
+</html>
