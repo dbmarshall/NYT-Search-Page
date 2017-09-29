@@ -44,6 +44,11 @@ $.ajax({
   $("#results").append(articleDiv);
   }
 
+  $("#search").on("click", function(){
+
+
+    })
+
  
 }).fail(function(err) {
   throw err;
